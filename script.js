@@ -30,7 +30,6 @@ const model = new OpenAI({
 const prompt = new PromptTemplate({
     template: promptMessage,
     inputVariables: ['question'],
-    // partialVariables: { format_instructions: formatInstructions }
 })
 
 
@@ -55,10 +54,15 @@ const init = () => {
             message: 'Hello! I am your Personal Tech Assistant. You can Ask me anything about Tech!:\n\n'
         }
     ])
-    .then(res => {
+    .then(async (res) => {
         if(res.name != 'quit') {
-            generateResponse(res.name);
-            init();
+            try {
+                const response = await generateResponse(res.name);
+                init();
+            }
+            catch(error) {
+                console.log(error);
+            }
         }
         else return;
     })
