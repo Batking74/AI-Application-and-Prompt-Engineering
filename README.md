@@ -2,6 +2,9 @@
 An AI-powered tech assistant application utilizing Transformer Models/Large Language Models to generate responses based on user prompts. The application harnesses advanced language processing capabilities to provide dynamic and contextually relevant outputs.
 
 ![Nazirs Ai Applications and Prompt Engineering Project](./AI-Applications-and-Prompt-Engineering%20-11_29_2023.png)
+
+## Demonstration
+[![Watch the video](./Assets/AI-Applications-and-Prompt-Engineering%20-11_29_2023.png)](./Assets/AI-Applications-and-Prompt-Engineering-Video-Demonstration-2023-11-29.mp4)
 ## Usage
 
 ### Step 1: Initialize npm
